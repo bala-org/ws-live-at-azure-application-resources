@@ -17,3 +17,7 @@ variable "tfc_host_name"{
     description = "terraform host name"
     default = "app.terraform.io"
 }
+
+variable "tfc_baseline_repo"{
+    description = "baseline repo to access outputs" 
+}
