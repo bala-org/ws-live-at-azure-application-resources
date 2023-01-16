@@ -1,2 +1,5 @@
 rg_name = "tfe-test-rg"
 location = "CentralUS"
+tfc_host_name = "app.terraform.io"
+tfc_org_name = "bala-tf"
+tfc_baseline_repo = ""
