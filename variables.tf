@@ -1,23 +1,27 @@
-variable "rg_name"{
+variable "rgname"{
     description = "resourcegroup name"
-    default = "test-rg2"
+    default = ""
 }
 
-variable "location"{
+variable "region_primary"{
     description = "Localtion of rg"
-    default = "EastUS"
+    default = ""
 }
 
 variable "tfc_org_name"{
     description = "terraform organization name"
-    default = "bala-tf"
+    default = ""
 }
 
 variable "tfc_host_name"{
     description = "terraform host name"
-    default = "app.terraform.io"
+    default = ""
 }
 
 variable "tfc_baseline_repo"{
     description = "baseline repo to access outputs" 
+}
+
+variable "vnetname" {
+description = "storage account name"
 }
