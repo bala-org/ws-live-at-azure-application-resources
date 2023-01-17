@@ -17,7 +17,8 @@ provider "azurerm" {
 
 resource "azurerm_storage_account" "svm_storageacc" {
   name                     = var.vnetname
-  resource_group_name      = data.terraform_remote_state.baseline.outputs.rgname
+   #resource_group_name      = data.terraform_remote_state.baseline.outputs.rgname
+    resource_group_name     = var.rgname
   location                 = var.region_primary
   account_tier             = "Standard"
   account_replication_type = "GRS"
